@@ -1,0 +1,5 @@
+dataset rows	1000000	2500000	5000000	10000000	50000000
+4 core sqlalchemy bodo	16.04	30.94	65.72	105.51	432.96
+1 core pyarrow no bodo	20.03	33.97	60.92	116.67	530.44
+4 core multiprocessing pyarrow	13.48	17.95	30.11	40.35	234.37
+12 core multiprocessing pyarrow	15.92	23.79	30.71	41.13	212.37
