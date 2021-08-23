@@ -1,0 +1,57 @@
+--pyarrow_test--
+df creation + groupby + sum time: 108.032
+
+real	1m51.169s
+user	0m23.080s
+sys	0m5.898s
+--sqlalchemy_bodo_test--
+df creation + groupby + sum time: 69.313000
+
+real	1m24.983s
+user	2m11.092s
+sys	0m20.552s
+--multiprocessing_pyarrow_test--
+running 10000000 rows with 4 processes
+df creation + groupby + sum time: 51.657
+
+real	0m53.987s
+user	0m21.035s
+sys	0m6.513s
+--pyarrow_test--
+df creation + groupby + sum time: 95.37
+
+real	1m37.426s
+user	0m22.005s
+sys	0m4.817s
+--sqlalchemy_bodo_test--
+df creation + groupby + sum time: 60.678000
+
+real	1m5.580s
+user	1m31.275s
+sys	0m12.159s
+--multiprocessing_pyarrow_test--
+running 10000000 rows with 4 processes
+df creation + groupby + sum time: 48.214
+
+real	0m50.475s
+user	0m21.215s
+sys	0m6.436s
+--pyarrow_test--
+df creation + groupby + sum time: 93.677
+
+real	1m36.138s
+user	0m21.802s
+sys	0m4.686s
+--sqlalchemy_bodo_test--
+df creation + groupby + sum time: 64.778000
+
+real	1m9.384s
+user	1m37.957s
+sys	0m13.400s
+--multiprocessing_pyarrow_test--
+running 10000000 rows with 4 processes
+df creation + groupby + sum time: 41.939
+
+real	0m44.169s
+user	0m21.471s
+sys	0m6.556s

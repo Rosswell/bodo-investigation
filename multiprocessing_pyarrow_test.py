@@ -21,7 +21,6 @@ def test(start, end, total_limit):
           f"where row_num >={start} and row_num <{end + 1}"
     cursor.execute(sql)
     df = cursor.fetch_pandas_all()
-    df = df.groupby("REF").sum()
     return df
 
 
@@ -34,5 +33,5 @@ if __name__ == '__main__':
     pool = mp.Pool(processes=processes)
     t0 = time.time()
     tasks = [pool.apply_async(test, args) for args in arg_list]
-    results = pd.concat([p.get() for p in tasks])
+    results = pd.concat([p.get() for p in tasks]).groupby("REF").sum()
     print(f"df creation + groupby + sum time: {round(time.time() - t0, 3)}")

@@ -1,3 +1,6 @@
 .idea
 .DS_Store
 ve
+scripts_with_creds
+mprofile*
+fil-result
